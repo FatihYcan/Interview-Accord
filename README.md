@@ -33,3 +33,5 @@ React kullanılarak geliştirilmiş bir mülakat sözlüğü uygulamasıdır. Uy
 - Javascript
 - React
 - Google Fonts
+
+[Live](https://fy-interview-accord.netlify.app/)
