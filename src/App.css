@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    -45deg,
+    #004d40,
+    #00796b,
+    #004d40,
+    #00796b,
+    #004d40
+  );
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  height: 100vh;
+  color: #fff;
+}
+
+.header {
+  margin: 2rem;
+  font-size: 3rem;
+}
+
+h2 {
+  color: #ffab00;
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.app {
+  display: grid;
+  place-content: center;
+  margin: 2rem auto;
+  max-width: 70%;
+}
+
+.main {
+  margin: 0px 1rem 1rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: #e0f2f1;
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-family: "Cinzel", serif;
+  color: #ff6f00;
+  margin-right: 0.5rem;
+}
+
+.ques-answer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #004d40;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  height: 2.6rem;
+  width: 2.5rem;
+  padding-top: 0.3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #004d40;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: scale(1.1);
+}
+
+p {
+  margin-top: 1rem;
+  text-align: justify;
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-family: "Pathway Gothic One", sans-serif;
+  text-indent: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Animasyon */
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
